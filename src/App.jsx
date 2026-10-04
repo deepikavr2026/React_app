@@ -23,6 +23,8 @@ import UserData from "./components/Hooks/useContext/UserData"
 import Crud from "./components/Form/Crud"
 import UnControlledComponents from "./components/Hooks/useEffect/useRef/UnControlledComponents"
 import WithOutMemoExample from "./components/Hooks/useMemo/WithOutMemoExample"
+import CallbackExample from "./components/Hooks/useMemo/CallbackExample"
+import MemoExample from "./useContext/Hooks/useMemo/MemoExample"
 
 
 
@@ -65,6 +67,8 @@ function App() {
       <Route path="/Form" element={<Crud/>}/>
       <Route path="/useRef" element={<useEffect/>}/>
       <Route path="/Hooks" element={<WithOutMemoExample/>}/>
+      <Route path="/Hooks" element={<CallbackExample/>}/>
+      <Route path="/Hooks" element={<MemoExample/>}/>
 
 
 
