@@ -4,11 +4,15 @@ import './index.css'
 import App from './App.jsx'
 import { UserProvider } from './components/Hooks/useContext/UserContext.jsx'
 import { ThemeProvider } from './components/Hooks/useContext/ThemeContext.jsx'
+import { store } from './redux/store.js'
+import {provider} from 'react-redux'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ThemeProvider>
+    <UserProvider>
+    <provider store = {store}>
     <App />
-    </ThemeProvider>
+    </provider>
+    </UserProvider>
   </StrictMode>,
 )

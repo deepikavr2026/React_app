@@ -23,8 +23,10 @@ import UserData from "./components/Hooks/useContext/UserData"
 import Crud from "./components/Form/Crud"
 import UnControlledComponents from "./components/Hooks/useEffect/useRef/UnControlledComponents"
 import WithOutMemoExample from "./components/Hooks/useMemo/WithOutMemoExample"
-import CallbackExample from "./components/Hooks/useMemo/CallbackExample"
+// import CallbackExample from "./components/Hooks/useMemo/CallbackExample"
 import MemoExample from "./useContext/Hooks/useMemo/MemoExample"
+import CallbackExample from "./src/components/Hooks/useMemo/CallbackExample"
+import CounterRtk from "./components/redux/CounterRtk"
 
 
 
@@ -69,6 +71,8 @@ function App() {
       <Route path="/Hooks" element={<WithOutMemoExample/>}/>
       <Route path="/Hooks" element={<CallbackExample/>}/>
       <Route path="/Hooks" element={<MemoExample/>}/>
+      <Route path="/redux" element={<CounterRtk/>}/>
+  
 
 
 
