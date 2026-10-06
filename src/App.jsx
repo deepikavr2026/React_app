@@ -4,9 +4,9 @@ import About from "./lifeCycleMethod/reactRouterDomcpm/About"
 import LinkComponent from "./lifeCycleMethod/reactRouterDomcpm/LinkComponent"
 import UnMounting from "./lifeCycleMethod/UnMounting"
 import UpdatingCounter from "./lifeCycleMethod/Updating"
-import Home from "./lifeCycleMethod/reactRouterDomcpm/Home"
-import Test from "./lifeCycleMethod/reactRouterDomcpm/Test"
-import UseStateHock from "./components/UseStateHock"
+import Home from "./lifeCycleMethod/reactRouterDomcpn/Home"
+import Test from "./lifeCycleMethod/reactRouterDomcpn/Test"
+import UseStateHook from "./components/UseStateHook"
 import ShowHide from "./components/ShowHide"
 import Togglefunc from "./components/Togglefunc"
 import ChangeBackground from "./components/ChangeBackground"
@@ -27,6 +27,7 @@ import WithOutMemoExample from "./components/Hooks/useMemo/WithOutMemoExample"
 import MemoExample from "./useContext/Hooks/useMemo/MemoExample"
 import CallbackExample from "./src/components/Hooks/useMemo/CallbackExample"
 import CounterRtk from "./components/redux/CounterRtk"
+import StudentRegistration from "./components/reactHookQues/StudentRegistrationForm"
 
 
 
@@ -50,7 +51,7 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/" element={<About/>}/>
 
-      <Route path="/useState" element={<UseStateHock/>}/>
+      <Route path="/useState" element={<UseStateHook/>}/>
       <Route path="/show" element={<ShowHide/>}/>
       <Route path="/toggle" element={<Togglefunc/>}/>
       <Route path="/background" element={<ChangeBackground/>}/>
@@ -61,17 +62,24 @@ function App() {
       <Route path="/useEffect" element={<UseEffectApi/>}/>
 
       <Route path="/props" element={<Parent/>}/>
+
       <Route path="/propsdrilling" element={<ParentData/>}/>
+
       <Route path="/context" element={<UserData/>}/>
-      
       <Route path="/context" element={<UserData/>}/>
+    
       <Route path="/Form" element={<Form/>}/>
       <Route path="/Form" element={<Crud/>}/>
+
       <Route path="/useRef" element={<useEffect/>}/>
+
       <Route path="/Hooks" element={<WithOutMemoExample/>}/>
       <Route path="/Hooks" element={<CallbackExample/>}/>
       <Route path="/Hooks" element={<MemoExample/>}/>
+
       <Route path="/redux" element={<CounterRtk/>}/>
+      
+      <Route path="/reactHookQues" element={<StudentRegistration/>}/>
   
 
 
